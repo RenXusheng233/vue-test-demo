@@ -18,6 +18,7 @@ const mockHttp = {
 
 describe('FormSubmitterWithAxios', () => {
   it('reveals a notification when submitted', async () => {
+    // NOTE: mocks - 将任何属性附加到 Vue.prototype 上的方式
     const wrapper = shallowMount(FormSubmitterWithAxios, {
       mocks: {
         $http: mockHttp,
