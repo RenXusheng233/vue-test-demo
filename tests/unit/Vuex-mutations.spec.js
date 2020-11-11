@@ -4,6 +4,8 @@ import mutations from '@/store/mutations.js'
 describe('SET_POST', () => {
   it('add a post to the state', () => {
     const post = { id: 1, title: 'Post' }
+
+    // 模拟vuex state
     const state = {
       postIds: [],
       posts: {},
